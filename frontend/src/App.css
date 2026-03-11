@@ -3,81 +3,81 @@ body {
 }
 
 .home-page {
-  background-color: #660c08;
-  width: 100%;
-  min-height: 100vh;
+  background-color: #690a06;
+  width: 100vw;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 }
 
-.left-side-column,
-.right-side-column {
+.left-side-column {
   position: absolute;
+  left: 0;
   top: 0;
   width: 50px;
-  height: 100vh;
+  height: 100%;
   background-color: rgb(0, 0, 0);
 }
 
-.left-side-column {
-  left: 0;
-}
-
 .right-side-column {
+  position: absolute;
   right: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  background-color: rgb(3, 3, 3);
 }
 
 .connect-wrapper {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 200px;
 }
 
 .connect-line {
   position: absolute;
-  width: 100%;
-  height: 4px;
+  top: 38%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 2px;
   background-color: white;
 }
 
 .connect-sign {
-  position: relative;
-  background-color: white;
-  padding: 20px 50px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  z-index: 1;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #690a06;
+  padding: 0 20px;
 }
 
 .connect-sign h1 {
+  color: white;
   margin: 0;
-  font-size: 3rem;
-  color: black;
-  font-family: Arial, sans-serif;
 }
 
 .login-box {
   position: absolute;
-  top: 52%;
+  top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 220px;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  padding: 30px;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 350px;
+  background-color: rgb(187, 91, 1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 80px;
   box-sizing: border-box;
 }
 
-.login-box p {
-  font-size: 1.2rem;
-  font-family: Arial, sans-serif;
-  color: black;
-  margin: 20px 0;
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
