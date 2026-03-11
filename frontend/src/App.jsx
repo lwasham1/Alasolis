@@ -2,14 +2,15 @@ import { useState } from 'react'
 
 
 
-function Lobby() {
+
+function App() {
   
 
   return (
     <>
-        <h2>Big penis</h2>
+        <h1>POop</h1>
     </>
   )
 }
 
-export default Lobby
+export default App
