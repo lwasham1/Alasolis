@@ -4,6 +4,7 @@ const port = 8000;
 
 app.get('/', (req, res) => {
   console.log("User connected.");
+  res.send("Backend is working");
 });
 
 
