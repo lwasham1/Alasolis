@@ -11,6 +11,10 @@ function SignUp() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if(form.password.length !== 8){
+      alert("Password is not 8 in length idiot");
+      return;
+    }
     if(form.password !== form.confirmPassword){
       alert("Passwords do not match");
       return;
@@ -25,7 +29,7 @@ function SignUp() {
       <div className="connect-wrapper">
         <div className="connect-line"></div>
         <div className="connect-sign">
-          <h1>Sign Up</h1>
+          <h1>Alasolis</h1>
         </div>
       </div>
       <div className="login-box">
